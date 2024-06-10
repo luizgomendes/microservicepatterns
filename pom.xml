@@ -12,6 +12,7 @@
         <module>apigateway</module>
         <module>demo-service</module>
         <module>user-service</module>
+        <module>department-service</module>
     </modules>
 
     <properties>

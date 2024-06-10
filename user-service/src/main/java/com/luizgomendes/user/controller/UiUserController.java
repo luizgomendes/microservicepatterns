@@ -49,6 +49,9 @@ public class UiUserController {
         if(bindingResult.hasErrors()) {
             return "add-edit-user";
         }
+        if(user.getId() != null && user.getId().isEmpty()) {
+            user.setId(null);
+        }
         userService.saveUser(user);
         return "redirect:users";
     }

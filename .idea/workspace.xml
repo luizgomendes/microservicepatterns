@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79a13cd2-5bbd-4b60-8c32-5f93e8100d72" name="Changes" comment="Api Gateway and demo service">
-      <change afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/UserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/luizgomendes/user/UserServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="79a13cd2-5bbd-4b60-8c32-5f93e8100d72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/department-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/luizgomendes/department/DepartmentServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/luizgomendes/department/controller/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/luizgomendes/department/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/luizgomendes/department/repository/DepartmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/luizgomendes/department/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/department-service/src/test/java/com/luizgomendes/department/DepartmentServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/controller/UiUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/controller/UiUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/templates/add-edit-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/templates/add-edit-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +35,28 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;luizgomendes&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="19b085ae-67f7-4bb8-8107-11043eac8ea7" />
+        <option name="url" value="https://github.com/luizgomendes/microservicepatterns" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,14 +77,17 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.ApigatewayApplication.executor": "Run",
     "Application.DemoApplication.executor": "Run",
+    "Application.DepartmentServiceApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "Maven.apigateway [install].executor": "Run",
+    "Maven.department-service [install].executor": "Run",
     "Maven.user [install].executor": "Run",
     "Maven.user-service [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/dev/MicroservicePatterns/user-service/src/main/java/com/luizgomendes/user",
@@ -70,7 +95,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunManager" selected="Application.DepartmentServiceApplication">
     <configuration name="ApigatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.luizgomendes.apigateway.ApigatewayApplication" />
       <module name="apigateway" />
@@ -97,6 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DepartmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luizgomendes.department.DepartmentServiceApplication" />
+      <module name="department-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luizgomendes.department.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.luizgomendes.user.UserServiceApplication" />
       <module name="user" />
@@ -112,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.DemoApplication" />
         <item itemvalue="Application.ApigatewayApplication" />
@@ -142,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716573966768</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding user service with MongoDb">
+      <option name="closed" value="true" />
+      <created>1717100342555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100342556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -160,7 +207,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Api Gateway and demo service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api Gateway and demo service" />
+    <MESSAGE value="Adding user service with MongoDb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding user service with MongoDb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -169,11 +217,6 @@
           <url>file://$PROJECT_DIR$/apigateway/src/main/java/com/luizgomendes/apigateway/ApigatewayApplication.java</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/luizgomendes/user/UserServiceApplication.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

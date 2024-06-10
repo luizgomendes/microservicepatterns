@@ -26,4 +26,7 @@ public class User {
     private String departmentId;
     @NotNull(message = "Hiring date is mandatory")
     private LocalDate hiringDate;
+    @NotNull(message = "Birthday is mandatory")
+    private LocalDate birthday;
+    private double salary;
 }

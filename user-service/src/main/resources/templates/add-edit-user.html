@@ -14,7 +14,7 @@
     <form th:action="@{/user-ui/save-user}" th:object="${user}" method="post">
         <div class="form-group">
             <label for="id">Id:</label>
-            <input th:field="*{id}" type="text" class="form-control" id="id" disabled/>
+            <input th:field="*{id}" type="text" class="form-control" id="id" readonly="true"/>
         </div>
         <div class="form-group">
             <label for="name">Name:</label>
@@ -22,9 +22,19 @@
             <label th:style="'color:red'" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></label>
         </div>
         <div class="form-group">
-            <label for="id">Hiring Date:</label>
+            <label for="birthday">Birthday:</label>
+            <input th:field="*{birthday}" type="date" class="form-control" id="birthday" th:value="${#dates.format(hiringDate, 'yyyy-MM-dd')}"/>
+            <label th:style="'color:red'" th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"></label>
+        </div>
+        <div class="form-group">
+            <label for="hiringDate">Hiring Date:</label>
             <input th:field="*{hiringDate}" type="date" class="form-control" id="hiringDate" th:value="${#dates.format(hiringDate, 'yyyy-MM-dd')}"/>
             <label th:style="'color:red'" th:if="${#fields.hasErrors('hiringDate')}" th:errors="*{hiringDate}"></label>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input th:field="*{salary}" type="number" class="form-control" id="salary" />
+            <label th:style="'color:red'" th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}"></label>
         </div>
         <a th:href="@{/user-ui/users}">
             <button type="button" class="btn btn-danger">Cancel</button>
