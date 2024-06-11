@@ -8,6 +8,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import java.time.LocalDate;
 
 
@@ -27,6 +28,7 @@ public class User {
     @NotNull(message = "Hiring date is mandatory")
     private LocalDate hiringDate;
     @NotNull(message = "Birthday is mandatory")
+    @Past(message = "Birthday must be in the past")
     private LocalDate birthday;
     private double salary;
 }

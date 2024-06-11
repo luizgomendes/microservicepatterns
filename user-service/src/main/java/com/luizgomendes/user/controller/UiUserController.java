@@ -1,28 +1,35 @@
 package com.luizgomendes.user.controller;
 
+import com.luizgomendes.user.model.Department;
 import com.luizgomendes.user.model.User;
+import com.luizgomendes.user.service.DepartmentService;
 import com.luizgomendes.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("/user-ui")
+@RequestMapping("/user/ui")
 public class UiUserController {
 
     private final UserService userService;
+    private final DepartmentService departmentService;
 
     @Autowired
-    public UiUserController(UserService userService) {
+    public UiUserController(UserService userService, DepartmentService departmentService) {
         this.userService = userService;
+        this.departmentService = departmentService;
     }
 
-    @GetMapping("/users")
+    @GetMapping(value={"","/","/users"})
     public String userList(Model model) {
         model.addAttribute("users", userService.findAllUsers());
         return "users";
@@ -40,6 +47,8 @@ public class UiUserController {
     public String addEditUser(@PathVariable("id") Optional<String> userId, Model model) {
         User user = userId.map(s -> userService.findUserById(s).get()).orElseGet(User::new);
         model.addAttribute("user", user);
+        model.addAttribute("departmentList", departmentService.getDepartmentList());
+
 
         return "add-edit-user";
     }

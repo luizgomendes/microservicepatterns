@@ -11,7 +11,7 @@
             <h1>User Information</h1>
         </div>
     </div>
-    <form th:action="@{/user-ui/save-user}" th:object="${user}" method="post">
+    <form th:action="@{/user/ui/save-user}" th:object="${user}" method="post">
         <div class="form-group">
             <label for="id">Id:</label>
             <input th:field="*{id}" type="text" class="form-control" id="id" readonly="true"/>
@@ -36,7 +36,15 @@
             <input th:field="*{salary}" type="number" class="form-control" id="salary" />
             <label th:style="'color:red'" th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}"></label>
         </div>
-        <a th:href="@{/user-ui/users}">
+        <div class=" form-group">
+            <label for="departmentId">Department:</label>
+            <select th:field="*{departmentId}" id="departmentId">
+                <option value="" ></option>
+                <option th:each="dep : ${departmentList}" th:value="${dep.departmentCode}" th:text="${dep.departmentCode}">
+                </option>
+            </select>
+        </div>
+        <a th:href="@{/user/ui/}">
             <button type="button" class="btn btn-danger">Cancel</button>
         </a>
         <button type="submit" class="btn btn-success">Save</button>
