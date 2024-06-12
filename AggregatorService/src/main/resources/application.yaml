@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  name: aggregator
+server:
+  port: 8083
+client:
+  user-service: http://localhost:8081/user
+  user-reactive-service: http://localhost:8081/user/reactive
+  department-service: http://localhost:8082/department
+  department-reactive-service: http://localhost:8082/department/reactive
